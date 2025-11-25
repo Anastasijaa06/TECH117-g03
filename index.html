@@ -35,7 +35,7 @@
   </nav>
 
 
-  <h1 id="top">Collision Warning System</h1>
+  <h1 id="top">BlueGard Flood warning system</h1>
 
   <section id="information">
     <h2>Project Information</h2>
@@ -43,18 +43,18 @@
     <p><strong>Instructor:</strong> Ph.D. Ana Rodrigues</p>
     <p><strong>Team Members:</strong></p>
     <ul>
-      <li>...</li>
-      <li>...</li>
-      <li>...</li>
-      <li>...</li>
+      <li>Anastasija Hristovska</li>
+      <li>Oranne Mesdouze</li>
+      <li>Rooney Omosa</li>
     </ul>
   </section>
 
   <section id="introduction">
     <h2>Introduction</h2>
-    <p>This project uses an <strong>Arduino Uno</strong>, an <strong>HC-SR04 ultrasonic sensor</strong>, a
-      <strong>passive buzzer</strong>, and <strong>red/yellow/green LEDs</strong> to provide proximity-based
-      alerts, similar to automotive collision detection systems.
+    <p>The BlueGard System is an early flood warning and water harvesting solution designed to protect communities from
+      sudden flooding events. Using a water level sensor and Arduino, the system will alert residents when water levels
+      rise to dangerous thresholds. Additionally, it will allow for rainwater collection and storage for future use,
+      promoting both safety and sustainable water management.
     </p>
   </section>
 
@@ -81,75 +81,187 @@
   <section id="bom">
     <h2>Bill of Materials (BoM)</h2>
     <table>
-      <thead>
-        <tr>
-          <th>Item</th>
-          <th>Qty</th>
-          <th>Unit Price (CAD)</th>
-          <th>Subtotal (CAD)</th>
-          <th>Source</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Arduino Uno Rev3</td>
-          <td>1</td>
-          <td>$27.60</td>
-          <td>$27.60</td>
-          <td><a href="https://store-usa.arduino.cc/products/arduino-uno-rev3">Arduino Store</a></td>
-        </tr>
-        <tr>
-          <td>HC-SR04 Ultrasonic Sensor</td>
-          <td>1</td>
-          <td>$3.95</td>
-          <td>$3.95</td>
-          <td><a href="https://www.adafruit.com/product/3942">Adafruit</a></td>
-        </tr>
-        <tr>
-          <td>Passive Buzzer</td>
-          <td>1</td>
-          <td>$0.95</td>
-          <td>$0.95</td>
-          <td><a href="https://www.sparkfun.com/passive-buzzer-module.html">SparkFun</a></td>
-        </tr>
-        <tr>
-          <td>LEDs (Red, Yellow, Green)</td>
-          <td>3</td>
-          <td>$0.20</td>
-          <td>$0.60</td>
-          <td>Adafruit</td>
-        </tr>
-        <tr>
-          <td>220 Ω Resistors</td>
-          <td>3</td>
-          <td>$0.03</td>
-          <td>$0.09</td>
-          <td>Adafruit</td>
-        </tr>
-        <tr>
-          <td>Breadboard</td>
-          <td>1</td>
-          <td>$4.95</td>
-          <td>$4.95</td>
-          <td><a href="https://www.adafruit.com/product/64">Adafruit</a></td>
-        </tr>
-        <tr>
-          <td>Jumper Wires</td>
-          <td>1 set</td>
-          <td>$3.50</td>
-          <td>$3.50</td>
-          <td><a href="https://www.sparkfun.com/jumper-wires-standard-7-m-m-30-awg-30-pack.html">SparkFun</a>
-          </td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="3">Estimated Total</td>
-          <td>$41.64</td>
-          <td>—</td>
-        </tr>
-      </tfoot>
+
+      <tr>
+
+        <th>Item</th>
+
+        <th>Description</th>
+
+        <th>Qty</th>
+
+        <th>Specifications</th>
+
+        <th>Estimated Cost (CAD)</th>
+
+        <th>Supplier/part number</th>
+
+      </tr>
+
+      <tr>
+
+        <td>1</td>
+
+        <td>Led</td>
+
+        <td>4</td>
+
+        <td>5mm, 20 mA, 2V forward voltage (approx.)</td>
+
+        <td>$1.5</td>
+
+        <td>Super Smarza kit</td>
+
+      </tr>
+
+      <tr>
+
+        <td>2</td>
+
+        <td>Breadboard</td>
+
+        <td>1</td>
+
+        <td>830 Tie-points</td>
+
+        <td>$13</td>
+
+        <td>Super Smarza kit</td>
+
+      </tr>
+
+      <tr>
+
+        <td>3</td>
+
+        <td>Jumper wires</td>
+
+        <td>25</td>
+
+        <td>Variety of male to male and male to female connections</td>
+
+        <td>$10</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>4</td>
+        <td>Servo motor</td>
+        <td>1</td>
+        <td>SG90 9g Micro Servo Motor</td>
+        <td>$7</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>5</td>
+        <td>USB cable</td>
+        <td>1</td>
+        <td>USB Type A to B</td>
+        <td>$10</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>6</td>
+        <td>Resistors for Led</td>
+        <td>5</td>
+        <td>220 Ohms ±5%</td>
+        <td>$0.8</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>7</td>
+        <td>Resistors</td>
+        <td></td>
+        <td>1K OHM 5%</td>
+        <td>$0.16</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>8</td>
+        <td>Computer (for programming)</td>
+        <td>1</td>
+        <td>Any with Arduino IDE installed</td>
+        <td>_____</td>
+        <td>____</td>
+      </tr>
+
+      <tr>
+        <td>9</td>
+        <td>Water lever sensor</td>
+        <td>1</td>
+        <td>5Pcs Rain Water Level Sensor Module Depth of Detection Liquid Surface Height for Arduino DC3-5V</td>
+        <td>$9.1</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>10</td>
+        <td>Buzzer</td>
+        <td>1</td>
+        <td>BUZZER MAGNETIC 5V 12MM TH</td>
+        <td>$3</td>
+        <td>Super Smarza kit</td>
+      </tr>
+
+      <tr>
+        <td>11</td>
+        <td>Controller Board</td>
+        <td>1</td>
+        <td>MMOBIEL UNO R3 Board ATmega328P A16U2 for Arduino IDE Project rohs Complaint</td>
+        <td>$25</td>
+        <td>Super Smarza kit</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Plastic cup/box</td>
+        <td>3</td>
+        <td>Plastic containers</td>
+        <td>$5</td>
+        <td>dollorama</td>
+      </tr>
+
+      <tr>
+
+        <td>13</td>
+
+        <td>Plastic tube</td>
+
+        <td>1</td>
+
+        <td>Flexible translucent silicone pipe</td>
+
+        <td>$13</td>
+
+        <td>amazon</td>
+
+      </tr>
+
+      <tr>
+
+        <td>14</td>
+
+        <td>Display(LCD)</td>
+
+        <td>1</td>
+
+        <td>5v 1602 Module</td>
+
+        <td>$10.99</td>
+
+        <td>Super Smarza kit</td>
+
+      </tr>
+
     </table>
+    <p><strong>Where you can get smraza super starter kit:</strong> <a href="https://www.smraza.com/products/smraza-super-starter-kit-with-breadboard-power-supply-jumper-wires-resistors-led-lcd-1602-sensors-detailed-tutorial-for-project-compatible-with-arduino-s26" >Smraza Super Starter Kit</a></p>
+    <p><strong>Where you can get the plastic containers:</strong> <a href="https://www.instacart.ca/products/27857876-plastico-rectangular-plastic-containers-250-ml" >Dollar Tree</a></p>
+    <p><strong>Where you can get the flexible translucent silicone pipe</strong> <a href="https://www.amazon.ca/uxcell%C2%AE-Silicone-Flexible-Translucent-Transfer/dp/B01MQJKVXF/ref=asc_df_B01MQJKVXF?mcid=c1ee92f92eb4387d839825b569ded960&tag=googleshopc0c-20&linkCode=df0&hvadid=706827341462&hvpos=&hvnetw=g&hvrand=12182312127717206430&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198443&hvtargid=pla-837844171405&hvocijid=12182312127717206430-B01MQJKVXF-&hvexpln=0&gad_source=1&th=1" >Amazon</a></p>
+
+
   </section>
 
   <section id="prototype">
@@ -259,69 +371,73 @@ void loop() {
       sustainable through reusable components.</p>
   </section>
 
- <section id="references">
-  <h2>References</h2>
-  <p>
-    The following external resources and example projects demonstrate related Arduino applications 
-    using ultrasonic distance sensors, passive buzzers, and multicolour LEDs:
-  </p>
+  <section id="references">
+    <h2>References</h2>
+    <p>
+      The following external resources and example projects demonstrate related Arduino applications
+      using ultrasonic distance sensors, passive buzzers, and multicolour LEDs:
+    </p>
 
-  <ul>
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Ultrasonic sensor projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
-      </a>
-    </li>
+    <ul>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>Ultrasonic sensor projects.</em>
+        Arduino Project Hub.
+        <a href="https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor" target="_blank"
+          rel="noopener noreferrer">
+          https://projecthub.arduino.cc/projects/tags/ultrasonic-sensor
+        </a>
+      </li>
 
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>Buzzer projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
-        https://create.arduino.cc/projecthub/projects/tags/buzzer
-      </a>
-    </li>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>Buzzer projects.</em>
+        Arduino Project Hub.
+        <a href="https://create.arduino.cc/projecthub/projects/tags/buzzer" target="_blank" rel="noopener noreferrer">
+          https://create.arduino.cc/projecthub/projects/tags/buzzer
+        </a>
+      </li>
 
-    <li>
-      Arduino Project Hub. (n.d.). 
-      <em>LED projects.</em> 
-      Arduino Project Hub. 
-      <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
-        https://projecthub.arduino.cc/projects/tags/led
-      </a>
-    </li>
+      <li>
+        Arduino Project Hub. (n.d.).
+        <em>LED projects.</em>
+        Arduino Project Hub.
+        <a href="https://projecthub.arduino.cc/projects/tags/led" target="_blank" rel="noopener noreferrer">
+          https://projecthub.arduino.cc/projects/tags/led
+        </a>
+      </li>
 
-    <li>
-      Instructables. (n.d.). 
-      <em>Distance measurement using ultrasonic sensor.</em> 
-      Instructables. 
-      <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank" rel="noopener noreferrer">
-        https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
-      </a>
-    </li>
+      <li>
+        Instructables. (n.d.).
+        <em>Distance measurement using ultrasonic sensor.</em>
+        Instructables.
+        <a href="https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/" target="_blank"
+          rel="noopener noreferrer">
+          https://www.instructables.com/Arduino-Distance-Measurement-Using-Ultrasonic-Senso/
+        </a>
+      </li>
 
-    <li>
-      Circuit Basics. (n.d.). 
-      <em>How to use an ultrasonic sensor with Arduino.</em> 
-      Circuit Basics. 
-      <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank" rel="noopener noreferrer">
-        https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
-      </a>
-    </li>
+      <li>
+        Circuit Basics. (n.d.).
+        <em>How to use an ultrasonic sensor with Arduino.</em>
+        Circuit Basics.
+        <a href="https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/" target="_blank"
+          rel="noopener noreferrer">
+          https://www.circuitbasics.com/how-to-use-an-ultrasonic-sensor-with-arduino/
+        </a>
+      </li>
 
-    <li>
-      Last Minute Engineers. (n.d.). 
-      <em>Ultrasonic sensor tutorial.</em> 
-      Last Minute Engineers. 
-      <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank" rel="noopener noreferrer">
-        https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
-      </a>
-    </li>
-  </ul>
-</section>
+      <li>
+        Last Minute Engineers. (n.d.).
+        <em>Ultrasonic sensor tutorial.</em>
+        Last Minute Engineers.
+        <a href="https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/" target="_blank"
+          rel="noopener noreferrer">
+          https://lastminuteengineers.com/ultrasonic-sensor-arduino-tutorial/
+        </a>
+      </li>
+    </ul>
+  </section>
 
 
 
